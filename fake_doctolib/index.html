@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment Confirmation</title>
+    <style>
+        body {
+            background-color: #f0fdf4;
+            font-family: Arial, sans-serif;
+            color: #1a202c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #2f855a;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 400px;
+        }
+        input[type="text"], input[type="email"], input[type="number"] {
+            width: 95%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+        }
+        button {
+            background-color: #38a169;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2f855a;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>The next appointment is: really really soon </h2>
+
+    <h1>Confirm Your Appointment</h1>
+
+    <form action="/submit" method="post">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="text" name="location" placeholder="Location" required>
+        <input type="text" name="symptoms" placeholder="Symptoms" required>
+        <input type="text" name="ssn" placeholder="Social Security Number" required>
+        <button id="submit_button" type="submit">Confirm Appointment</button>
+    </form>
+
+</body>
+</html>
