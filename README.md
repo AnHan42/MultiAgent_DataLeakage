@@ -2,6 +2,8 @@
 
 This project is a multi-agent AI-powered medical booking tool built using Google's Agent Development Kit (ADK). It showcases how intelligent agents can coordinate to book medical appointments while giving out first-aid advices. It simulates one agent crawling the web and interacting with a malicious website. Optionally, a Security Agent can be used to defend against data leakage. Streamlit is used for the UI, and FastAPI is used for the Agent communication and respond with structured JSON outputs.
 
+This project is built on top of https://github.com/AashiDutt/Google-Agent-Development-Kit-Demo
+
 ## Workflow
 
 This medical booking tool demonstrates a modular, orchestrated agent workflow:
